@@ -14,3 +14,16 @@ Quanten cryptographie is
 
 ## Methods
 
+
+## Use Cases
+### Decryption
+
+
+### Encryption
+
+
+### Encryption Example
+
+
+## Quellen
+
