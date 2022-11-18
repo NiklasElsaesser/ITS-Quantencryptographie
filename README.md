@@ -10,7 +10,7 @@ The widely used encryption techniques today are usually based on one hand the sy
 
 Now with the wider access to Quanten Computers a third technique enters the cryptographie landscape, Quanten cryptographie. This new technique differentiates between Quanten cryptographie and Post-Quanten cryptographie.
 
-Quanten cryptographie is 
+The term Quanten-Computer was first coined in 1985 by a british Physic David Deutsch. His assumptions regarding the operating principle are still valid today and are widely implemented. His **thoughts** were that a quanten computer had to work with so called "Qubits", like regular electronical computers these "Qubits" behave like a bits. Meaning beeing in astate of 1 and 0. But "Qubits" have the property of beeing in a superposition meaning a 1 and a 0 at the same time, opposing to regular computers, who can be either 1 or 0. The result of this is that  [4]
 
 ## Methods
 
@@ -26,4 +26,8 @@ Quanten cryptographie is
 
 
 ## Quellen
+[1] Mainzer, Klaus. "Quantencomputer: von der Quantenwelt zur Künstlichen Intelligenz", 2020. [Book]\\
+[2] Hughes, Ciaran; Isaacson, Joshua; Perry, Anastasia; Sun, Ranbel F.; Turner, Jessica. "Quantum Computing for the Quantum Curious", 2021. [Book]\\
+[3] Homeister, Matthias. "Quantum Computing verstehen: Grundlagen - Anwendungen - Perspektiven", 2022. [Book]\\
+[4] Schmeh, Klaus. "Codeknacker gegen Codemacher: die faszinierende Geschichte der Verschlüsselung", 2022. [Book]\\
 
