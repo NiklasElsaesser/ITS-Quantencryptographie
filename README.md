@@ -8,11 +8,10 @@ This Repository consits of only the Paper i´ve written as my Exam Projekt.
 2. [Methods](#Methods)
    1. [Symmetrical Encryption](#subparagraph2.1)
    2. [Asymmetrical Encryption](#subparagraph2.2)
-   3. [Euclid´s Algorithm](#subsubparagraph2.2.1)
 3. [Use Cases](#use-cases)
    1. [Decryption](#subparagraph3.1)
    2. [Encryption](#subparagraph3.2)
-   2. [Encryption Example](#subparagraph3.3)
+   3. [Encryption Example](#subparagraph3.3)
 4. [Citations](#citations)
 
 ## Introduction <a name="introduction"></a>
@@ -58,10 +57,10 @@ The term Quanten-Computer was first coined in 1985 by a british Physic David Deu
 ### Decryption <a name="subparagraph3.1"></a>
 
 
-### Encryption <a name="subparagraph3."></a>
+### Encryption <a name="subparagraph3.2"></a>
 
 
-### Encryption Example <a name="encryption-example"></a>
+### Encryption Example <a name="subparagraph3.3"></a>
 
 
 ## Citations <a name="citations"></a>
