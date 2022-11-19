@@ -7,9 +7,8 @@ This Repository consits of only the Paper i´ve written as my Exam Projekt.
 1. [Introduction](#introduction)
 2. [Methods](#Methods)
    1. [Symmetrical Encryption](#subparagraph1.1)
-   2. [Symmetrical Encryption](#subparagraph1.2)
-   3. [Symmetrical Encryption](#subparagraph1.3)
-   4. [Symmetrical Encryption](#subsubparagraph1.2.1)
+   2. [Asymmetrical Encryption](#subparagraph1.2)
+   3. [Euclid´s Algorithm](#subsubparagraph1.2.1)
 3. [Third Example](#third-example)
 
 ## Introduction <a name="introduction"></a>
@@ -29,7 +28,7 @@ Furthermore the way to communicate the key between sender and receiver is usuall
 *explanation of symmetrical oldschool codes* [1]\
 The Vernam
 
-### Assymetrical Encryption <a name="subparagraph2.2"></a>
+### Asymetrical Encryption <a name="subparagraph2.2"></a>
 *explanation of asymmetrical oldschool codes*\
 The most widely used and accepted types of encryption avoid the drawbacks of a secure key transmission and the authenticity by dedicating two different key to sender and receiver. The used technique is called *public key cryptographie* because the used encryption is publicly known. This technique is secure because it is impossible for todays most advacend computers to decrypt the keys. To decrypt the encrypted key, one just has to derive the decrpyted key from the encrypted one.[1]
 
