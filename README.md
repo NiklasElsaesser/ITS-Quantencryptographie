@@ -5,13 +5,15 @@ This Repository consits of only the Paper i´ve written as my Exam Projekt.
 # Quanten Cryptographie
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Methods](#Methods)
+2. [Cryptographie Methods](#Methods)
    1. [Symmetrical Encryption](#subparagraph2.1)
    2. [Asymmetrical Encryption](#subparagraph2.2)
+3. [Quanten Methods](#quanten-methods)
+   1. [fix heading](#subparagraph3.1)
 3. [Use Cases](#use-cases)
-   1. [Decryption](#subparagraph3.1)
-   2. [Encryption](#subparagraph3.2)
-   3. [Encryption Example](#subparagraph3.3)
+   1. [Decryption](#subparagraph4.1)
+   2. [Encryption](#subparagraph4.2)
+   3. [Encryption Example](#subparagraph4.3)
 4. [Citations](#citations)
 
 ## Introduction <a name="introduction"></a>
@@ -50,17 +52,19 @@ Now with the wider access to Quanten Computers a third technique enters the cryp
 
 The term Quanten-Computer was first coined in 1985 by a british Physic David Deutsch. His assumptions regarding the operating principle are still valid today and are widely implemented. His **thoughts** were that a quanten computer had to work with so called "Qubits", like regular electronical computers these "Qubits" behave like a bits. Meaning beeing in astate of 1 and 0. But "Qubits" have the property of beeing in a superposition meaning a 1 and a 0 at the same time, opposing to regular computers, who can be either 1 or 0. The result of this is that  [4]
 
-
-
+## Quanten Methods <a name="quanten-methods"></a>
+### Quantenparallesim <a name="subparagraph3.1"></a>
 
 ## Use Cases <a name="use-cases"></a>
-### Decryption <a name="subparagraph3.1"></a>
+### Decryption <a name="subparagraph4.1"></a>
+There are ways to decrpyt even the best RSA-Procedures, the algorithm used for this problem was discovered by Peter Shor in 1994. It solves the factorial problem in polynomial time.[1] A problem is in polynomial time solvable if a deterministic calculator can solve it in a time which does not grow stronger as a polynomial function.[5]
+
+Shors algorithm uses the "Qauntenparallelismus" and 
+
+### Encryption <a name="subparagraph4.2"></a>
 
 
-### Encryption <a name="subparagraph3.2"></a>
-
-
-### Encryption Example <a name="subparagraph3.3"></a>
+### Encryption Example <a name="subparagraph4.3"></a>
 
 
 ## Citations <a name="citations"></a>
@@ -68,4 +72,5 @@ The term Quanten-Computer was first coined in 1985 by a british Physic David Deu
 [2] Hughes, Ciaran; Isaacson, Joshua; Perry, Anastasia; Sun, Ranbel F.; Turner, Jessica. "Quantum Computing for the Quantum Curious", 2021. [Book]\
 [3] Homeister, Matthias. "Quantum Computing verstehen: Grundlagen - Anwendungen - Perspektiven", 2022. [Book]\
 [4] Schmeh, Klaus. "Codeknacker gegen Codemacher: die faszinierende Geschichte der Verschlüsselung", 2022. [Book]\
+[5]Dwedney, A.K. "Der Turing Omnibuds", 1995.[Book]
 
