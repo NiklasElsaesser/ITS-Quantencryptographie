@@ -6,9 +6,9 @@ This Repository consits of only the Paper i´ve written as my Exam Projekt.
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Methods](#Methods)
-   1. [Symmetrical Encryption](#subparagraph1.1)
-   2. [Asymmetrical Encryption](#subparagraph1.2)
-   3. [Euclid´s Algorithm](#subsubparagraph1.2.1)
+   1. [Symmetrical Encryption](#subparagraph2.1)
+   2. [Asymmetrical Encryption](#subparagraph2.2)
+   3. [Euclid´s Algorithm](#subsubparagraph2.2.1)
 3. [Third Example](#third-example)
 
 ## Introduction <a name="introduction"></a>
