@@ -9,7 +9,11 @@ This Repository consits of only the Paper i´ve written as my Exam Projekt.
    1. [Symmetrical Encryption](#subparagraph2.1)
    2. [Asymmetrical Encryption](#subparagraph2.2)
    3. [Euclid´s Algorithm](#subsubparagraph2.2.1)
-3. [Third Example](#third-example)
+3. [Use Cases](#use-cases)
+   1. [Decryption](#subparagraph3.1)
+   2. [Encryption](#subparagraph3.2)
+   2. [Encryption Example](#subparagraph3.3)
+4. [Citations](#citations)
 
 ## Introduction <a name="introduction"></a>
 When it is important to communicate securely over the internet, one has to ensure a encrypted method to transfer Data. This is done by encrypting the Data via various, usually mathematical based techniques. Now with the wider acces to Quanten Computers these conventional techniques can be decrpyted with new algorithms and additionally new quanten algorithms allow unbreakable encrpytion for data transfer.
@@ -40,7 +44,7 @@ In the field of algorithmical komplexitytheoriy to calculate *p* and *q* from *n
 
 To enrypt a number it is only necessary to know product *n*, which means the sender makes *n* public and keeps the factors *p* and *q* hidden. Decrypting is only possible if one knows the prime numbers *p* and *q*.[1]
 
-#### Euclid´s Algorithm <a name="subsubparagraph1.2.1"></a>
+#### Euclid´s Algorithm <a name="subsubparagraph2.2.1"></a>
 
 
 Now with the wider access to Quanten Computers a third technique enters the cryptographie landscape, Quanten cryptographie. This new technique differentiates between Quanten cryptographie and Post-Quanten cryptographie.
@@ -50,17 +54,17 @@ The term Quanten-Computer was first coined in 1985 by a british Physic David Deu
 
 
 
-## Use Cases
-### Decryption
+## Use Cases <a name="use-cases"></a>
+### Decryption <a name="subparagraph3.1"></a>
 
 
-### Encryption
+### Encryption <a name="subparagraph3."></a>
 
 
-### Encryption Example
+### Encryption Example <a name="encryption-example"></a>
 
 
-## Citations
+## Citations <a name="citations"></a>
 [1] Mainzer, Klaus. "Quantencomputer: von der Quantenwelt zur Künstlichen Intelligenz", 2020. [Book]\
 [2] Hughes, Ciaran; Isaacson, Joshua; Perry, Anastasia; Sun, Ranbel F.; Turner, Jessica. "Quantum Computing for the Quantum Curious", 2021. [Book]\
 [3] Homeister, Matthias. "Quantum Computing verstehen: Grundlagen - Anwendungen - Perspektiven", 2022. [Book]\
