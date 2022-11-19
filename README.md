@@ -10,14 +10,27 @@ Traditionell encryption methods as well as some type of quanten encryption metho
 
 The widely used encryption techniques today are usually based on one hand the symmetrical techniques with, for example the "Advanced Encryption Standart" (AES) or the "Data Encryption Standard" (DES) and on the other hand the assymetrical techniques like the "RSA"-Procedure. Altough there is an ongoing struggle between encrypters and decrypters, the above listed techniques are still usable in real world scenarios. Although the symmetrical techniques have been cracked in theoretical cases. [4]
 
-### Vernam-Chiffre 
-The Vernam-Code is technically an absolut secure encryption algorithm, but in reality the randomly generated key is usually not completely random, which means a powerful computer can identify the rules after which the key is generated and reproduce set key. 
+### Vernam-Chiffre (Symmetrical Encryption)
+The Vernam-Code is technically an absolut secure encryption algorithm, but in reality the randomly generated key is usually not completely random, which means a powerful computer can identify the rules after which the key is generated and reproduce set key. [1]
 
-Furthermore the way to communicate the key between sender and receiver is usually not completely secure as well. Today any key can be intercepted with every conventional way of communication, i.e. wire-based and wireless.
+Furthermore the way to communicate the key between sender and receiver is usually not completely secure as well. Today any key can be intercepted with every conventional way of communication, i.e. wire-based and wireless. As a result the authenticity of a message is not garanteed, since the receiver can send messages to himself and make it look like they originated somewhere else.[1]
 
 *explanation of symmetrical oldschool codes* [1]\
 The Vernam
 
+### RSA-Procedure (Assymetrical Encryption)
+The most widely used and accepted types of encryption avoid the drawbacks of a secure key transmission and the authenticity by dedicating two different key to sender and receiver. The used technique is called *public key cryptographie* because the used encryption is publicly known. This technique is secure because it is impossible for todays most advacend computers to decrypt the keys. To decrypt the encrypted key, one just has to derive the decrpyted key from the encrypted one.[1]
+
+Assymetrical encrypted procedures are based on the so called "trapdoor-function". It is easy to "enter" set function, but difficult to impossible to exit, meaning it is easy to multiply two prime numbers *p* and *q* to receive *n* (key) *n = p * q*. 
+But it is difficult to calculate the arguments which led to the result, altough we know that a prime number is a produkt of a natural number we cant calculate *p* and *q* from *n*.\
+**bspl bild einfügen bzw. latex formel o.ä.**[1]
+
+In the field of algorithmical komplexitytheoriy to calculate *p* and *q* from *n* is a "NP-Problem with an exponential time of calculation". There hasent been any successfull approach to reduce the complexity.[1]
+
+To 
+
+
+[1]
 
 *explanation of asymmetrical oldschool codes* [1]
 
