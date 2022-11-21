@@ -83,6 +83,6 @@ As previously described with conventional encryption, it is neccesary that the s
 [3] Homeister, Matthias. "Quantum Computing verstehen: Grundlagen - Anwendungen - Perspektiven", 2022. [Book]\
 [4] Schmeh, Klaus. "Codeknacker gegen Codemacher: die faszinierende Geschichte der Verschlüsselung", 2022. [Book]\
 [5]Dwedney, A.K. "Der Turing Omnibuds", 1995.[Book]\
-[6]The Jupyter Book Communiity, "Quantum Key Distribution", 2021.(Quantum Key Distribution)(https://qiskit.org/textbook/ch-algorithms/quantum-key-distribution.html#1.-Introduction)[Online]\
-[7]https://www.uni-mainz.de/presse/aktuell/14737_ENG_HTML.php
+[6]The Jupyter Book Communiity,[Quantum Key Distribution](https://qiskit.org/textbook/ch-algorithms/quantum-key-distribution.html#1.-Introduction),2021.[Online]\
+[7]van Loock, Peter.[Quantum communication research network launched](https://www.uni-mainz.de/presse/aktuell/14737_ENG_HTML.php),2021[Online]
 
