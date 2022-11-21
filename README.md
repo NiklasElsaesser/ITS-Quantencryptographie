@@ -72,7 +72,7 @@ There are ways to decrpyt even the best RSA-Procedures, the algorithm used for t
 Shors algorithm uses the "Qauntenparallelismus" and can therefore decrypt factorial numbers from up to 1024 Bit´s. Which means as soon as a quanten computer with a big enough computing power exists, Shor´s alogrithm will be able to decrpyt any fomr of RSA and the data currently encrypted this way will be at risk.[1]
 
 ### Encryption <a name="subparagraph4.2"></a>
-As previously described with conventional encryption, it is neccesary that the secret key won´t be stolen, for example by symmetric-key cryptographie during the transmission. If a quantum communication channel is used the participants Bob and Alice will know if a third party (Eve) intercepted the message (Bob, Alice and Eve are just placeholder protagonists). An example of an quantum communication channel is [6]
+As previously described with conventional encryption, it is neccesary that the secret key won´t be stolen, for example by symmetric-key cryptographie during the transmission. If a quantum communication channel is used the participants Bob and Alice will know if a third party (Eve) intercepted the message (Bob, Alice and Eve are just placeholder protagonists).[6] Quantum communication networks are in development at multiple universities and companies, but none has left development stage yet. 
 
 ### Encryption Example <a name="subparagraph4.3"></a>
 
@@ -83,6 +83,6 @@ As previously described with conventional encryption, it is neccesary that the s
 [3] Homeister, Matthias. "Quantum Computing verstehen: Grundlagen - Anwendungen - Perspektiven", 2022. [Book]\
 [4] Schmeh, Klaus. "Codeknacker gegen Codemacher: die faszinierende Geschichte der Verschlüsselung", 2022. [Book]\
 [5]Dwedney, A.K. "Der Turing Omnibuds", 1995.[Book]\
-[6]The Jupyter Book Communiity, "Quantum Key Distribution", 2021.[Online]\
-[]
+[6]The Jupyter Book Communiity, "Quantum Key Distribution", 2021.(Quantum Key Distribution)(https://qiskit.org/textbook/ch-algorithms/quantum-key-distribution.html#1.-Introduction)[Online]\
+[7]https://www.uni-mainz.de/presse/aktuell/14737_ENG_HTML.php
 
