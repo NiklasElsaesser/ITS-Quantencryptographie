@@ -4,18 +4,22 @@ This Repository consits of only the Paper i´ve written as my Exam Projekt.
 
 # Quanten Cryptographie
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Cryptographie Methods](#Methods)
-   1. [Symmetrical Encryption](#subparagraph2.1)
-   2. [Asymmetrical Encryption](#subparagraph2.2)
-3. [Quanten Methods](#quanten-methods)
-   1. [fix headign](#subparagraph3.1)
-   2. [Shors-Algorithm](#subparagraph3.2)
-4. [Use Cases](#use-cases)
-   1. [Decryption](#subparagraph4.1)
-   2. [Encryption](#subparagraph4.2)
-   3. [Encryption Example](#subparagraph4.3)
-5. [Citations](#citations)
+- [ITS-Quantencryptographie](#its-quantencryptographie)
+- [Quanten Cryptographie](#quanten-cryptographie)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction ](#introduction-)
+  - [Methods ](#methods-)
+    - [Symmetrical-Encryption ](#symmetrical-encryption-)
+    - [Asymetrical Encryption ](#asymetrical-encryption-)
+      - [Euclid´s Algorithm ](#euclids-algorithm-)
+  - [Quanten Methods ](#quanten-methods-)
+    - [Quantum-Parallelism ](#quantum-parallelism-)
+    - [Shors-Algorithm ](#shors-algorithm-)
+  - [Use Cases ](#use-cases-)
+    - [Decryption ](#decryption-)
+    - [Encryption ](#encryption-)
+    - [Encryption Example ](#encryption-example-)
+  - [Citations ](#citations-)
 
 ## Introduction <a name="introduction"></a>
 When it is important to communicate securely over the internet, one has to ensure a encrypted method to transfer Data. This is done by encrypting the Data via various, usually mathematical based techniques. Now with the wider acces to Quanten Computers these conventional techniques can be decrpyted with new algorithms and additionally new quanten algorithms allow unbreakable encrpytion for data transfer.
@@ -74,11 +78,22 @@ Shors algorithm uses the "Qauntenparallelismus" and can therefore decrypt factor
 ### Encryption <a name="subparagraph4.2"></a>
 As previously described with conventional encryption, it is neccesary that the secret key won´t be stolen, for example by symmetric-key cryptographie during the transmission. If a quantum communication channel is used the participants Bob and Alice will know if a third party (Eve) intercepted the message (Bob, Alice and Eve are just placeholder protagonists).[6] Quantum communication networks are in development at multiple universities and companies, but none has left the development stage yet.[7]
 
+The in the Example used protocoll uses the fact that the measurement of a qubit can change its state. If Alice sends Bob a message and Eve is listening and therefore measures the qubit before Bob does, the chance of a change in the state of the qubits increases. Therefore Bob will not receive the message i.e. the qubit Alice sent.[6]
 
+For example, if Alice sends a qubit 0 in the X-basis and Bob measueres it in the X-basis, Bob measures 0. If Eve tries to measure the qubit now before Bob in the Z-basis before it reaches Bob, she will change the qubits state to either 0 or 1 and Bob will receive the initial 0 with a chance of only 5 %. Now Alice and Bob know Eve is evesdropping.[6]
+
+To make tapping as hard as possible, the quantum key distribution protocol requires the following process enough times so an evesdropper can´t get away unnoticed. Which requires the following stepts:[6]
+1. Alice generates a string of random bits, e.g.: 1000101011010100
+2. Alice chooses a random basis for each bit: ZZXZXXXZXZXXXXXX
+3. She keeps the two Values private.
+4. Alice encodes each bit onto a string of qubits using the basis she chose, so each qubit is in one of the states |0⟩,|1⟩,|+⟩ or |-⟩, with the states chosen at random. The original qubit string looks like this:|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩ which is the message she sends to Bob.
+5. Bob measures each qubit at a random basis, for example at: XZZZXZXZXZXZZZXZ He keeps the result of the measurement private.
+6. Alice and Bob share the basis which they used for each qubit private. If Bob measured a qubit in the same basis as Alice prepared it in, the qubit becomes part of their shared secret key, if the qubit does not match its discarded.
+7. Alice and Bob share a random sample of their keys and if the sample matches, they know (to a small error margin) that their transmission is succesfull.
 
 ### Encryption Example <a name="subparagraph4.3"></a>
 
-
+The whole example is available as a jupyter notebook in binder here:[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NiklasElsaesser/ITS-Quantencryptographie/HEAD)
 
 ## Citations <a name="citations"></a>
 [1] Mainzer, Klaus. "Quantencomputer: von der Quantenwelt zur Künstlichen Intelligenz", 2020. [Book]\
