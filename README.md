@@ -11,10 +11,11 @@ This Repository consits of only the Paper i´ve written as my Exam Projekt.
   - [Methods ](#methods-)
     - [Symmetrical-Encryption ](#symmetrical-encryption-)
     - [Asymetrical Encryption ](#asymetrical-encryption-)
-      - [Euclid´s Algorithm ](#euclids-algorithm-)
+    - [Euclid´s Algorithm ](#euclids-algorithm-)
   - [Quanten Methods ](#quanten-methods-)
     - [Quantum-Parallelism ](#quantum-parallelism-)
     - [Shors-Algorithm ](#shors-algorithm-)
+    - [Qubits ](#qubits-)
   - [Use Cases ](#use-cases-)
     - [Decryption ](#decryption-)
     - [Encryption ](#encryption-)
@@ -50,7 +51,7 @@ In the field of algorithmical komplexitytheoriy to calculate *p* and *q* from *n
 
 To enrypt a number it is only necessary to know product *n*, which means the sender makes *n* public and keeps the factors *p* and *q* hidden. Decrypting is only possible if one knows the prime numbers *p* and *q*.[1]
 
-#### Euclid´s Algorithm <a name="subsubparagraph2.2.1"></a>
+### Euclid´s Algorithm <a name="subsubparagraph2.2"></a>
 
 
 Now with the wider access to Quanten Computers a third technique enters the cryptographie landscape, Quanten cryptographie. This new technique differentiates between Quanten cryptographie and Post-Quanten cryptographie.
@@ -59,12 +60,22 @@ The term Quanten-Computer was first coined in 1985 by a british Physic David Deu
 
 ## Quanten Methods <a name="quanten-methods"></a>
 ### Quantum-Parallelism <a name="subparagraph3.1"></a>
+Quantum-parallelism is a method to compute multiple calculations at once by having many conditions at the same time. In a Qubit register of size *m* can a superpsoition 2^*m* [1]
+
+Während in einem m Quantenbit großen Register eines Quantencomputers eine Überlagerung aller 2^m möglichen m Quantenbit-Worte speicherbar ist, kann im m Bit großen Register eines klassischen Computers nur eines der 2m möglichen m Bit-Worte abgelegt werden.
+
 ```diff
 - Seite 101[1]
 ```
 
 
 ### Shors-Algorithm <a name="subparagraph3.2"></a>
+[1]
+```diff
+- Seite 101[1]
+```
+
+### Qubits <a name="subparagraph3.3"></a>
 ```diff
 - Seite 101[1]
 ```
@@ -93,7 +104,7 @@ To make tapping as hard as possible, the quantum key distribution protocol requi
 
 ### Encryption Example <a name="subparagraph4.3"></a>
 
-The whole example is available as a jupyter notebook in binder here:[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NiklasElsaesser/ITS-Quantencryptographie/HEAD)
+The whole example is available as a jupyter notebook in binder here:[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NiklasElsaesser/Quantum-Biscuit/HEAD?labpath=Quantum-Biscuit-Optimization.ipynb)
 
 ## Citations <a name="citations"></a>
 [1] Mainzer, Klaus. "Quantencomputer: von der Quantenwelt zur Künstlichen Intelligenz", 2020. [Book]\
