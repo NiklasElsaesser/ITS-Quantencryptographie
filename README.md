@@ -36,7 +36,10 @@ The Vernam-Code is technically an absolut secure encryption algorithm, but in re
 
 Furthermore the way to communicate the key between sender and receiver is usually not completely secure as well. Today any key can be intercepted with every conventional way of communication, i.e. wire-based and wireless. As a result the authenticity of a message is not garanteed, since the receiver can send messages to himself and make it look like they originated somewhere else.[1]
 
-*explanation of symmetrical oldschool codes* [1]\
+```diff
+- *explanation of symmetrical oldschool codes* [1]\
+```
+
 The Vernam
 
 ### Asymetrical Encryption <a name="subparagraph2.2"></a>
