@@ -11,7 +11,6 @@ This Repository consits of only the Paper i´ve written as my Exam Projekt.
   - [Methods ](#methods-)
     - [Symmetrical-Encryption ](#symmetrical-encryption-)
     - [Asymetrical Encryption ](#asymetrical-encryption-)
-    - [Euclid´s Algorithm ](#euclids-algorithm-)
   - [Quanten Methods ](#quanten-methods-)
     - [Quantum-Parallelism ](#quantum-parallelism-)
     - [Shors-Algorithm ](#shors-algorithm-)
@@ -29,16 +28,16 @@ Traditionell encryption methods as well as some type of quanten encryption metho
 
 The widely used encryption techniques today are usually based on one hand the symmetrical techniques with, for example the "Advanced Encryption Standart" (AES) or the "Data Encryption Standard" (DES) and on the other hand the assymetrical techniques like the "RSA"-Procedure. Altough there is an ongoing struggle between encrypters and decrypters, the above listed techniques are still usable in real world scenarios. Although the symmetrical techniques have been cracked in theoretical cases. [4]
 
+Now with the wider access to Quanten Computers a third technique enters the cryptographie landscape, Quanten cryptographie. This new technique differentiates between Quanten cryptographie and Post-Quanten cryptographie.
+
+The term Quanten-Computer was first coined in 1985 by a british Physic David Deutsch. His assumptions regarding the operating principle are still valid today and are widely implemented. His **thoughts** were that a quanten computer had to work with so called "Qubits", like regular electronical computers these "Qubits" behave like a bits. Meaning beeing in astate of 1 and 0. But "Qubits" have the property of beeing in a superposition meaning a 1 and a 0 at the same time, opposing to regular computers, who can be either 1 or 0. The result of this is that  [4]
+
 ## Methods <a name="Methods"></a>
 
 ### Symmetrical-Encryption <a name="subparagraph2.1"></a>
 The Vernam-Code is technically an absolut secure encryption algorithm, but in reality the randomly generated key is usually not completely random, which means a powerful computer can identify the rules after which the key is generated and reproduce set key. [1]
 
 Furthermore the way to communicate the key between sender and receiver is usually not completely secure as well. Today any key can be intercepted with every conventional way of communication, i.e. wire-based and wireless. As a result the authenticity of a message is not garanteed, since the receiver can send messages to himself and make it look like they originated somewhere else.[1]
-
-```diff
-- *explanation of symmetrical oldschool codes* [1]\
-```
 
 The Vernam
 
@@ -47,37 +46,28 @@ The Vernam
 The most widely used and accepted types of encryption avoid the drawbacks of a secure key transmission and the authenticity by dedicating two different key to sender and receiver. The used technique is called *public key cryptographie* because the used encryption is publicly known. This technique is secure because it is impossible for todays most advacend computers to decrypt the keys. To decrypt the encrypted key, one just has to derive the decrpyted key from the encrypted one.[1]
 
 Assymetrical encrypted procedures are based on the so called "trapdoor-function". It is easy to "enter" set function, but difficult to impossible to exit, meaning it is easy to multiply two prime numbers *p* and *q* to receive *n* (key) *n = p * q*. 
-But it is difficult to calculate the arguments which led to the result, altough we know that a prime number is a produkt of a natural number we cant calculate *p* and *q* from *n*.\
-**bspl bild einfügen bzw. latex formel o.ä.**[1]
+But it is difficult to calculate the arguments which led to the result, altough we know that a prime number is a produkt of a natural number we cant calculate *p* and *q* from *n*.[1]
 
 In the field of algorithmical komplexitytheoriy to calculate *p* and *q* from *n* is a "NP-Problem with an exponential time of calculation". There hasent been any successfull approach to reduce the complexity.[1]
 
 To enrypt a number it is only necessary to know product *n*, which means the sender makes *n* public and keeps the factors *p* and *q* hidden. Decrypting is only possible if one knows the prime numbers *p* and *q*.[1]
 
-### Euclid´s Algorithm <a name="subsubparagraph2.2"></a>
-
-
-Now with the wider access to Quanten Computers a third technique enters the cryptographie landscape, Quanten cryptographie. This new technique differentiates between Quanten cryptographie and Post-Quanten cryptographie.
-
-The term Quanten-Computer was first coined in 1985 by a british Physic David Deutsch. His assumptions regarding the operating principle are still valid today and are widely implemented. His **thoughts** were that a quanten computer had to work with so called "Qubits", like regular electronical computers these "Qubits" behave like a bits. Meaning beeing in astate of 1 and 0. But "Qubits" have the property of beeing in a superposition meaning a 1 and a 0 at the same time, opposing to regular computers, who can be either 1 or 0. The result of this is that  [4]
-
 ## Quanten Methods <a name="quanten-methods"></a>
 ### Quantum-Parallelism <a name="subparagraph3.1"></a>
-Quantum-parallelism is a method to compute multiple calculations at once by having many conditions at the same time. In a Qubit register of size *m* can a superpsoition 2^*m* [1]
-
-Während in einem m Quantenbit großen Register eines Quantencomputers eine Überlagerung aller 2^m möglichen m Quantenbit-Worte speicherbar ist, kann im m Bit großen Register eines klassischen Computers nur eines der 2m möglichen m Bit-Worte abgelegt werden.
-
-```diff
-- Seite 101[1]
-```
-
+Quantum-parallelism is a method to compute multiple calculations at once by having many conditions at the same time. In a Qubit register of size *m* a superpsoition can save the amount 2^*m* of *m* possible Qubits. A regular computer with a register of size *m* Bits can only save the amount of 2*m*.\
+With quantum-parallelism, Shor´s Algorithm is able to calculate the prime factors. The calculation of a factorial number with a wordsize larger than 1024 Bit is nearly impossible for a regular computer.[1]
 
 ### Shors-Algorithm <a name="subparagraph3.2"></a>
-[1]
-```diff
-- Seite 101[1]
-```
+Shor´s Algorithm on a quantum computer is able to decrypt every RSA encrypted message. It assumes that a number *n* can be factorized, if the modulfunction *f(x)= a^x mod n* for a number *a* < *n* can be calculated.[1]
 
+[1]
+Nach Definition bildet die Modulfunktion f die Menge der ganzen Zahlen Z auf die beschränkte Zahlenmenge Zn = {0, 1, ..., n − 1} ab. Für den Input 0, 1, ..., N − 1 des Quantenalgorithmus wird N in der Größenordnung n2 gewählt. Man geht also von einer Funktion f aus, mit der die Menge {0,1,...,N − 1} auf die Menge {0,1,...,n − 1} mit Periode p abgebildet wird, d. h. es gilt f(x + p) = f(x) für alle x aus {0, 1, ..., N − 1}. Der entsprechende unitäre Operator Uf von f bildet zwei Quan- tenregister |a⟩|b⟩ auf |a⟩|b ⨁ f(x)⟩ ab. Um die gewünschte Beschleunigung der Su- che nach Perioden der Modulfunktion zu erreichen, wird darauf die Quanten- Fourier-Transformation angesetzt.
+
+```diff
+- Seite 102, Picture of Gates from IBMQ[1]
+```
+[1]
+Shors Algorithmus beruht also auf der Anwendung des Hadamard-Gatters, der unitären Transformation der Modulfunktion f(x) = ax mod n zur Faktorisie- rung von n und der Quanten-Fourier-Transformation. Insgesamt werden dazu Gatter in der Größenordnung von O((logn)3) benötigt. Die Rechenzeit des Quan- tenalgorithmus liegt in der Größenordnung von O(log log n · (logn)3) [21] Der klassische Teil von Shors Algorithmus (vgl. Abb. 6.3) verwendet nur Multiplika- tionen in der Größenordnung O(logn). Die Rechenzeit von Shors Algorithmus insgesamt zur Bestimmung eines echten Teilers der ganzen Zahl n beläuft sich daher auf die Größenordnung O(log log n · (logn)3) = O((logn)4). Der entschei- dende Schritt zur Beschleunigung der Periodenbestimmung ist die Fourier-Trans- formation, die in einen Quantenalgorithmus übersetzt wurde. Das ist zugleich der theoretische Durchbruch, das klassisch bisher nicht-polynomial lösbare Pro- bleme polynomial lösbar werden. Die Frage ist, ob Quantencomputer auch an- dere Probleme polynomial lösen können, die nicht von Quanten-Fourier-Trans- formationen abhängen.
 ### Qubits <a name="subparagraph3.3"></a>
 ```diff
 - Seite 101[1]
