@@ -15,10 +15,12 @@ This Repository consits of only the Paper i´ve written as my Exam Projekt.
     - [Quantum-Parallelism ](#quantum-parallelism-)
     - [Shors-Algorithm ](#shors-algorithm-)
     - [Qubits ](#qubits-)
+    - [Quantum Circuits ](#quantum-circuits-)
   - [Use Cases ](#use-cases-)
     - [Decryption ](#decryption-)
     - [Encryption ](#encryption-)
     - [Encryption Example ](#encryption-example-)
+  - [Conclusion](#conclusion)
   - [Citations ](#citations-)
 
 ## Introduction <a name="introduction"></a>
@@ -69,8 +71,13 @@ Nach Definition bildet die Modulfunktion f die Menge der ganzen Zahlen Z auf die
 [1]
 Shors Algorithmus beruht also auf der Anwendung des Hadamard-Gatters, der unitären Transformation der Modulfunktion f(x) = ax mod n zur Faktorisie- rung von n und der Quanten-Fourier-Transformation. Insgesamt werden dazu Gatter in der Größenordnung von O((logn)3) benötigt. Die Rechenzeit des Quan- tenalgorithmus liegt in der Größenordnung von O(log log n · (logn)3) [21] Der klassische Teil von Shors Algorithmus (vgl. Abb. 6.3) verwendet nur Multiplika- tionen in der Größenordnung O(logn). Die Rechenzeit von Shors Algorithmus insgesamt zur Bestimmung eines echten Teilers der ganzen Zahl n beläuft sich daher auf die Größenordnung O(log log n · (logn)3) = O((logn)4). Der entschei- dende Schritt zur Beschleunigung der Periodenbestimmung ist die Fourier-Trans- formation, die in einen Quantenalgorithmus übersetzt wurde. Das ist zugleich der theoretische Durchbruch, das klassisch bisher nicht-polynomial lösbare Pro- bleme polynomial lösbar werden. Die Frage ist, ob Quantencomputer auch an- dere Probleme polynomial lösen können, die nicht von Quanten-Fourier-Trans- formationen abhängen.
 ### Qubits <a name="subparagraph3.3"></a>
+A Qubit is the quantum variant of a bit, they represent the same function by storing and returning data as *1* or *0*. But they can be altered in additional ways, which allows us to use new algorithms and therefore calculate functions not possible before. Qubits can be in multiple states, represented by vectors, matrices, and complex numbers.[6]
+
+### Quantum Circuits <a name="subparagraph3.4"></a>
+A quantum Circuit describes a circuit on which quantum initialisation, the gates and measurements are "placed".
+First the qubits are initialized by beeing set in either the base |0⟩ or |1⟩ state or with an additional vector.[6]
 ```diff
-- Seite 101[1]
+- Qiskit Gate description[6]
 ```
 
 ## Use Cases <a name="use-cases"></a>
@@ -86,6 +93,10 @@ The in the Example used protocoll uses the fact that the measurement of a qubit 
 
 For example, if Alice sends a qubit 0 in the X-basis and Bob measueres it in the X-basis, Bob measures 0. If Eve tries to measure the qubit now before Bob in the Z-basis before it reaches Bob, she will change the qubits state to either 0 or 1 and Bob will receive the initial 0 with a chance of only 5 %. Now Alice and Bob know Eve is evesdropping.[6]
 
+```diff
+- Pictures from Qiskit / IBMQ depicting measurement states[1]
+```
+
 To make tapping as hard as possible, the quantum key distribution protocol requires the following process enough times so an evesdropper can´t get away unnoticed. Which requires the following stepts:[6]
 1. Alice generates a string of random bits, e.g.: 1000101011010100
 2. Alice chooses a random basis for each bit: ZZXZXXXZXZXXXXXX
@@ -99,12 +110,19 @@ To make tapping as hard as possible, the quantum key distribution protocol requi
 
 The whole example is available as a jupyter notebook in binder here:[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NiklasElsaesser/Quantum-Biscuit/HEAD?labpath=Quantum-Biscuit-Optimization.ipynb)
 
+## Conclusion
+```diff
+- Conclusion
+```
+
 ## Citations <a name="citations"></a>
 [1] Mainzer, Klaus. "Quantencomputer: von der Quantenwelt zur Künstlichen Intelligenz", 2020. [Book]\
 [2] Hughes, Ciaran; Isaacson, Joshua; Perry, Anastasia; Sun, Ranbel F.; Turner, Jessica. "Quantum Computing for the Quantum Curious", 2021. [Book]\
 [3] Homeister, Matthias. "Quantum Computing verstehen: Grundlagen - Anwendungen - Perspektiven", 2022. [Book]\
 [4] Schmeh, Klaus. "Codeknacker gegen Codemacher: die faszinierende Geschichte der Verschlüsselung", 2022. [Book]\
-[5]Dwedney, A.K. "Der Turing Omnibuds", 1995.[Book]\
-[6]The Jupyter Book Community,[Quantum Key Distribution](https://qiskit.org/textbook/ch-algorithms/quantum-key-distribution.html#1.-Introduction),2021.[Online]\
-[7]van Loock, Peter.[Quantum communication research network launched](https://www.uni-mainz.de/presse/aktuell/14737_ENG_HTML.php),2021[Online]
+[5]Dwedney, A.K. "Der Turing Omnibuds", 1995. [Book]\
+[6]The Jupyter Book Community, [Quantum Key Distribution](https://qiskit.org/textbook/ch-algorithms/quantum-key-distribution.html#1.-Introduction), 2021. [Online]\
+[7]The Jupyter Book Community, [Representing Qubit States](https://qiskit.org/textbook/ch-states/representing-qubit-states.html), 2021. [Online]\
+[8]The Jupyter Book Community, [Defining Quantum Circuits](https://qiskit.org/textbook/ch-algorithms/defining-quantum-circuits.html), 2021. [Online]\
+[9]van Loock, Peter. [Quantum communication research network launched](https://www.uni-mainz.de/presse/aktuell/14737_ENG_HTML.php), 2021. [Online]
 
