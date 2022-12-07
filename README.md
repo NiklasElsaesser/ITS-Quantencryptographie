@@ -41,10 +41,7 @@ The Vernam-Code is technically an absolut secure encryption algorithm, but in re
 
 Furthermore the way to communicate the key between sender and receiver is usually not completely secure as well. Today any key can be intercepted with every conventional way of communication, i.e. wire-based and wireless. As a result the authenticity of a message is not garanteed, since the receiver can send messages to himself and make it look like they originated somewhere else.[1]
 
-The Vernam
-
 ### Asymetrical Encryption <a name="subparagraph2.2"></a>
-*explanation of asymmetrical oldschool codes*\
 The most widely used and accepted types of encryption avoid the drawbacks of a secure key transmission and the authenticity by dedicating two different key to sender and receiver. The used technique is called *public key cryptographie* because the used encryption is publicly known. This technique is secure because it is impossible for todays most advacend computers to decrypt the keys. To decrypt the encrypted key, one just has to derive the decrpyted key from the encrypted one.[1]
 
 Assymetrical encrypted procedures are based on the so called "trapdoor-function". It is easy to "enter" set function, but difficult to impossible to exit, meaning it is easy to multiply two prime numbers *p* and *q* to receive *n* (key) *n = p * q*. 
