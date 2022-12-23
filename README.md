@@ -15,25 +15,25 @@ This Repository consits of only the Paper i´ve written as my Exam Projekt.
     - [Quantum-Parallelism ](#quantum-parallelism-)
     - [Shors-Algorithm ](#shors-algorithm-)
     - [Qubits ](#qubits-)
-    - [Quantum Circuits ](#quantum-circuits-)
   - [Use Cases ](#use-cases-)
     - [Decryption ](#decryption-)
     - [Encryption ](#encryption-)
     - [Encryption Example ](#encryption-example-)
   - [Conclusion](#conclusion)
-  - [Citations ](#citations-)
+  - [Citations](#citations)
 
 ## Introduction <a name="introduction"></a>
-When it is important to communicate securely over the internet, one has to ensure a encrypted method to transfer Data. This is done by encrypting the Data via various, usually mathematical based techniques. Now with the wider acces to Quanten Computers these conventional techniques can be decrpyted with new algorithms and additionally new quanten algorithms allow unbreakable encrpytion for data transfer.
+When it is important to communicate securely over the internet, one has to ensure a encrypted method to transfer Data. This is done by encrypting the Data via various, usually mathematical based techniques. Now with the wider acces to Quanten Computers (QC) these conventional techniques can be decrpyted with new algorithms, additionally new quanten algorithms allow unbreakable encrpytion for data transfer.
 
 Traditionell encryption methods as well as some type of quanten encryption methods are based on sharing two keys.
 
-The widely used encryption techniques today are usually based on one hand the symmetrical techniques with, for example the "Advanced Encryption Standart" (AES) or the "Data Encryption Standard" (DES) and on the other hand the assymetrical techniques like the "RSA"-Procedure. Altough there is an ongoing struggle between encrypters and decrypters, the above listed techniques are still usable in real world scenarios. Although the symmetrical techniques have been cracked in theoretical cases. [4]
+The widely used encryption techniques today are usually based on one hand, the symmetrical techniques with the "Advanced Encryption Standart" (AES) or the "Data Encryption Standard" (DES) and on the other hand the assymetrical techniques like the "RSA"-Procedure. Altough there is an ongoing struggle between encrypters and decrypters, the above listed techniques are still usable in real world scenarios. Although the symmetrical techniques have been cracked in theoretical cases. [4]
 
-Now with the wider access to Quanten Computers a third technique enters the cryptographie landscape, Quanten cryptographie. This new technique differentiates between Quanten cryptographie and Post-Quanten cryptographie.
+Now with the wider access to Quanten Computers a third technique enters the cryptographie landscape, Quantum cryptographie. Quantum Cryptograpghie meaning the ent- and decrpytion of data.
 
+```
 The term Quanten-Computer was first coined in 1985 by a british Physic David Deutsch. His assumptions regarding the operating principle are still valid today and are widely implemented. His **thoughts** were that a quanten computer had to work with so called "Qubits", like regular electronical computers these "Qubits" behave like a bits. Meaning beeing in astate of 1 and 0. But "Qubits" have the property of beeing in a superposition meaning a 1 and a 0 at the same time, opposing to regular computers, who can be either 1 or 0. The result of this is that  [4]
-
+```
 ## Methods <a name="Methods"></a>
 
 ### Symmetrical-Encryption <a name="subparagraph2.1"></a>
@@ -49,7 +49,7 @@ But it is difficult to calculate the arguments which led to the result, altough 
 
 In the field of algorithmical komplexitytheoriy to calculate *p* and *q* from *n* is a "NP-Problem with an exponential time of calculation". There hasent been any successfull approach to reduce the complexity.[1]
 
-To enrypt a number it is only necessary to know product *n*, which means the sender makes *n* public and keeps the factors *p* and *q* hidden. Decrypting is only possible if one knows the prime numbers *p* and *q*.[1]
+To encrypt a number it is only necessary to know product *n*, which means the sender makes *n* public and keeps the factors *p* and *q* hidden. Decrypting is only possible if one knows the prime numbers *p* and *q*.[1]
 
 ## Quanten Methods <a name="quanten-methods"></a>
 ### Quantum-Parallelism <a name="subparagraph3.1"></a>
@@ -59,34 +59,25 @@ With quantum-parallelism, Shor´s Algorithm is able to calculate the prime facto
 ### Shors-Algorithm <a name="subparagraph3.2"></a>
 Shor´s Algorithm on a quantum computer is able to decrypt every RSA encrypted message. It assumes that a number *n* can be factorized, if the modulfunction *f(x)= a^x mod n* for a number *a* < *n* can be calculated.[1]
 
-[1]
-Nach Definition bildet die Modulfunktion f die Menge der ganzen Zahlen Z auf die beschränkte Zahlenmenge Zn = {0, 1, ..., n − 1} ab. Für den Input 0, 1, ..., N − 1 des Quantenalgorithmus wird N in der Größenordnung n2 gewählt. Man geht also von einer Funktion f aus, mit der die Menge {0,1,...,N − 1} auf die Menge {0,1,...,n − 1} mit Periode p abgebildet wird, d. h. es gilt f(x + p) = f(x) für alle x aus {0, 1, ..., N − 1}. Der entsprechende unitäre Operator Uf von f bildet zwei Quan- tenregister |a⟩|b⟩ auf |a⟩|b ⨁ f(x)⟩ ab. Um die gewünschte Beschleunigung der Su- che nach Perioden der Modulfunktion zu erreichen, wird darauf die Quanten- Fourier-Transformation angesetzt.
-
-```diff
-- Seite 102, Picture of Gates from IBMQ[1]
-```
-[1]
-Shors Algorithmus beruht also auf der Anwendung des Hadamard-Gatters, der unitären Transformation der Modulfunktion f(x) = ax mod n zur Faktorisie- rung von n und der Quanten-Fourier-Transformation. Insgesamt werden dazu Gatter in der Größenordnung von O((logn)3) benötigt. Die Rechenzeit des Quan- tenalgorithmus liegt in der Größenordnung von O(log log n · (logn)3) [21] Der klassische Teil von Shors Algorithmus (vgl. Abb. 6.3) verwendet nur Multiplika- tionen in der Größenordnung O(logn). Die Rechenzeit von Shors Algorithmus insgesamt zur Bestimmung eines echten Teilers der ganzen Zahl n beläuft sich daher auf die Größenordnung O(log log n · (logn)3) = O((logn)4). Der entschei- dende Schritt zur Beschleunigung der Periodenbestimmung ist die Fourier-Trans- formation, die in einen Quantenalgorithmus übersetzt wurde. Das ist zugleich der theoretische Durchbruch, das klassisch bisher nicht-polynomial lösbare Pro- bleme polynomial lösbar werden. Die Frage ist, ob Quantencomputer auch an- dere Probleme polynomial lösen können, die nicht von Quanten-Fourier-Trans- formationen abhängen.
 ### Qubits <a name="subparagraph3.3"></a>
 A Qubit is the quantum variant of a bit, they represent the same function by storing and returning data as *1* or *0*. But they can be altered in additional ways, which allows us to use new algorithms and therefore calculate functions not possible before. Qubits can be in multiple states, represented by vectors, matrices, and complex numbers.[6]
 
-### Quantum Circuits <a name="subparagraph3.4"></a>
-A quantum Circuit describes a circuit on which quantum initialisation, the gates and measurements are "placed".
-First the qubits are initialized by beeing set in either the base |0⟩ or |1⟩ state or with an additional vector.[6]
 ```diff
-- Qiskit Gate description[6]
+- Grovers Algorithm
 ```
 
 ## Use Cases <a name="use-cases"></a>
 ### Decryption <a name="subparagraph4.1"></a>
 There are ways to decrpyt even the best RSA-Procedures, the algorithm used for this problem was discovered by Peter Shor in 1994. It solves the factorial problem in polynomial time.[1] A problem is in polynomial time solvable if a deterministic calculator can solve it in a time which does not grow stronger as a polynomial function.[5]
 
-Shors algorithm uses the "Qauntenparallelismus" and can therefore decrypt factorial numbers from up to 1024 Bit´s. Which means as soon as a quanten computer with a big enough computing power exists, Shor´s alogrithm will be able to decrpyt any fomr of RSA and the data currently encrypted this way will be at risk.[1]
+Shors algorithm uses the "Qauntum-parallelism" and can therefore decrypt factorial numbers from up to 1024 Bit´s. Which means as soon as a QC with a big enough computing power exists, Shor´s alogrithm will be able to decrpyt any fomr of RSA and the data currently encrypted this way will be at risk.[1]
+
+Addtionally Symmetrical Encrpyted Keys based on DES / AES can be decrypted with Grovers-Algorithm. Grovers-Algorithm is based on ab brute force technique by testing every possible Key. A QC decreases the necessary time to find the right key by two. 
 
 ### Encryption <a name="subparagraph4.2"></a>
 As previously described with conventional encryption, it is neccesary that the secret key won´t be stolen, for example by symmetric-key cryptographie during the transmission. If a quantum communication channel is used the participants Bob and Alice will know if a third party (Eve) intercepted the message (Bob, Alice and Eve are just placeholder protagonists).[6] Quantum communication networks are in development at multiple universities and companies, but none has left the development stage yet.[7]
 
-The in the Example used protocoll uses the fact that the measurement of a qubit can change its state. If Alice sends Bob a message and Eve is listening and therefore measures the qubit before Bob does, the chance of a change in the state of the qubits increases. Therefore Bob will not receive the message i.e. the qubit Alice sent.[6]
+The in the Example used protocoll uses the fact that the measurement of a qubit changes the qubits state. If Alice sends Bob a message and Eve is listening and therefore measures the qubit before Bob does, the chance of a change in the state of the qubits increases. Therefore Bob will not receive the message i.e. the qubits Alice sent.[6]
 
 For example, if Alice sends a qubit 0 in the X-basis and Bob measueres it in the X-basis, Bob measures 0. If Eve tries to measure the qubit now before Bob in the Z-basis before it reaches Bob, she will change the qubits state to either 0 or 1 and Bob will receive the initial 0 with a chance of only 5 %. Now Alice and Bob know Eve is evesdropping.[6]
 
@@ -102,17 +93,34 @@ To make tapping as hard as possible, the quantum key distribution protocol requi
 5. Bob measures each qubit at a random basis, for example at: XZZZXZXZXZXZZZXZ He keeps the result of the measurement private.
 6. Alice and Bob share the basis which they used for each qubit private. If Bob measured a qubit in the same basis as Alice prepared it in, the qubit becomes part of their shared secret key, if the qubit does not match its discarded.
 7. Alice and Bob share a random sample of their keys and if the sample matches, they know (to a small error margin) that their transmission is succesfull.
+```diff
+- mit Qiskit gegenchecken[1]
+```
+A potential evesdropper (Eve), changes the above scheme after step 4 as follows:
+1. Eve measures the Qubits at a random basis (just like Bob would) before they reach Bob.
+2. Eves measurement changed the basis of the Qubits which she now forwards to Bob.
+3. Now Bob shares its basis of measurement with Alice (similar to step 6 above.).
+4. Since the keys dont match anymore, they know something failed during the transmision and they discard the Data.
+
+Since it is possible for Eve to guess the right basis Quantum Encryption is not 100 % safe. But the rate can be measuret and is as follows: 0.75^x,  x being the lenght of the key.
 
 ### Encryption Example <a name="subparagraph4.3"></a>
 
 The whole example is available as a jupyter notebook in binder here:[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NiklasElsaesser/Quantum-Biscuit/HEAD?labpath=Quantum-Biscuit-Optimization.ipynb)
 
 ## Conclusion
-```diff
-- Conclusion
-```
+Since this work consists of two parts, the ent- and decrpytion, it its neccwsary to separate the results as well. 
 
-## Citations <a name="citations"></a>
+For Decryption, if there is a powerful enough QC overnight which can calculate and run the neccesary Algorithms, a whole lot of Data is at risk. Since all Data encrypted with traditional Algorithms and "regular" Computers is at risk of decryption. Therefore a lot of private Information is publicly visable and most likely accesible, for example Bank Accounts, Messages an so forth.
+
+Which requires Data encrpyted with RSA and Diffie-Hellman to be encprypted with a new Algorithm which is not at risk by QC. For Data encrypted with DES / AES it is neccesary to increase the lenght of the encryption key, or use a different Algorithm all together.
+
+Quantum Encryption is only reasonable in certain use cases but technically superior to traditional methods. Its downside is the expensive technological requirements to run the network of which the participants need to be part of.
+
+Ent- and Decrpytion are both subject to certain limitations caused by the physical nature of Quantum Technologie.
+  
+
+## Citations
 [1] Mainzer, Klaus. "Quantencomputer: von der Quantenwelt zur Künstlichen Intelligenz", 2020. [Book]\
 [2] Hughes, Ciaran; Isaacson, Joshua; Perry, Anastasia; Sun, Ranbel F.; Turner, Jessica. "Quantum Computing for the Quantum Curious", 2021. [Book]\
 [3] Homeister, Matthias. "Quantum Computing verstehen: Grundlagen - Anwendungen - Perspektiven", 2022. [Book]\
@@ -122,4 +130,3 @@ The whole example is available as a jupyter notebook in binder here:[![Binder](h
 [7]The Jupyter Book Community, [Representing Qubit States](https://qiskit.org/textbook/ch-states/representing-qubit-states.html), 2021. [Online]\
 [8]The Jupyter Book Community, [Defining Quantum Circuits](https://qiskit.org/textbook/ch-algorithms/defining-quantum-circuits.html), 2021. [Online]\
 [9]van Loock, Peter. [Quantum communication research network launched](https://www.uni-mainz.de/presse/aktuell/14737_ENG_HTML.php), 2021. [Online]
-
