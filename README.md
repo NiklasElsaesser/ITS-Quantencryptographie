@@ -15,6 +15,7 @@ This Repository consits of only the Paper i´ve written as my Exam Projekt.
     - [Quantum-Parallelism ](#quantum-parallelism-)
     - [Shors-Algorithm ](#shors-algorithm-)
     - [Qubits ](#qubits-)
+    - [Grovers-Algorithm ](#grovers-algorithm-)
   - [Use Cases ](#use-cases-)
     - [Decryption ](#decryption-)
     - [Encryption ](#encryption-)
@@ -31,9 +32,6 @@ The widely used encryption techniques today are usually based on one hand, the s
 
 Now with the wider access to Quanten Computers a third technique enters the cryptographie landscape, Quantum cryptographie. Quantum Cryptograpghie meaning the ent- and decrpytion of data.
 
-```
-The term Quanten-Computer was first coined in 1985 by a british Physic David Deutsch. His assumptions regarding the operating principle are still valid today and are widely implemented. His **thoughts** were that a quanten computer had to work with so called "Qubits", like regular electronical computers these "Qubits" behave like a bits. Meaning beeing in astate of 1 and 0. But "Qubits" have the property of beeing in a superposition meaning a 1 and a 0 at the same time, opposing to regular computers, who can be either 1 or 0. The result of this is that  [4]
-```
 ## Methods <a name="Methods"></a>
 
 ### Symmetrical-Encryption <a name="subparagraph2.1"></a>
@@ -60,11 +58,10 @@ With quantum-parallelism, Shor´s Algorithm is able to calculate the prime facto
 Shor´s Algorithm on a quantum computer is able to decrypt every RSA encrypted message. It assumes that a number *n* can be factorized, if the modulfunction *f(x)= a^x mod n* for a number *a* < *n* can be calculated.[1]
 
 ### Qubits <a name="subparagraph3.3"></a>
-A Qubit is the quantum variant of a bit, they represent the same function by storing and returning data as *1* or *0*. But they can be altered in additional ways, which allows us to use new algorithms and therefore calculate functions not possible before. Qubits can be in multiple states, represented by vectors, matrices, and complex numbers.[6]
+A Qubit is the quantum variant of a bit, they represent the same function by storing and returning data as *1* or *0*. But they can be altered in additional ways, which allows us to use new algorithms and therefore calculate functions not possible before. Qubits can be in multiple states, represented by vectors, matrices, and complex numbers.[7][8]
 
-```diff
-- Grovers Algorithm
-```
+### Grovers-Algorithm <a name="subparagrah3.4"></a>
+Grovers-Algorithm can speed up an unstructured search problem quadratically by using Grovers amplitude amplification. Amplitude Amplification amplifies the amplitude of a searched item while also decreasing the amplitudes of the other insignificant items.[9]
 
 ## Use Cases <a name="use-cases"></a>
 ### Decryption <a name="subparagraph4.1"></a>
@@ -75,34 +72,29 @@ Shors algorithm uses the "Qauntum-parallelism" and can therefore decrypt factori
 Addtionally Symmetrical Encrpyted Keys based on DES / AES can be decrypted with Grovers-Algorithm. Grovers-Algorithm is based on ab brute force technique by testing every possible Key. A QC decreases the necessary time to find the right key by two. 
 
 ### Encryption <a name="subparagraph4.2"></a>
-As previously described with conventional encryption, it is neccesary that the secret key won´t be stolen, for example by symmetric-key cryptographie during the transmission. If a quantum communication channel is used the participants Bob and Alice will know if a third party (Eve) intercepted the message (Bob, Alice and Eve are just placeholder protagonists).[6] Quantum communication networks are in development at multiple universities and companies, but none has left the development stage yet.[7]
+As previously described with conventional encryption, it is neccesary that the secret key won´t be stolen, for example by symmetric-key cryptographie during the transmission. If a quantum communication channel is used the participants Bob and Alice will know if a third party (Eve) intercepted the message (Bob, Alice and Eve are just placeholder protagonists).[6] Quantum communication networks are in development at multiple universities and companies, but none has left the development stage yet.[10]
 
 The in the Example used protocoll uses the fact that the measurement of a qubit changes the qubits state. If Alice sends Bob a message and Eve is listening and therefore measures the qubit before Bob does, the chance of a change in the state of the qubits increases. Therefore Bob will not receive the message i.e. the qubits Alice sent.[6]
 
-For example, if Alice sends a qubit 0 in the X-basis and Bob measueres it in the X-basis, Bob measures 0. If Eve tries to measure the qubit now before Bob in the Z-basis before it reaches Bob, she will change the qubits state to either 0 or 1 and Bob will receive the initial 0 with a chance of only 5 %. Now Alice and Bob know Eve is evesdropping.[6]
-
-```diff
-- Pictures from Qiskit / IBMQ depicting measurement states[1]
-```
+For example, if Alice sends a qubit 0 in the X-basis and Bob measueres it in the X-basis, Bob measures 0. If Eve tries to measure the qubit (first black square with arrow pointing to C) now before Bob in the Z-basis before it reaches Bob, she will change the qubits state to either 0 or 1 and Bob will receive the initial 0 with a chance of only 5 %. Now Alice and Bob know Eve is evesdropping.[6]
+![Alt text](interceptedKey.png "intercepted Key")
 
 To make tapping as hard as possible, the quantum key distribution protocol requires the following process enough times so an evesdropper can´t get away unnoticed. Which requires the following stepts:[6]
 1. Alice generates a string of random bits, e.g.: 1000101011010100
 2. Alice chooses a random basis for each bit: ZZXZXXXZXZXXXXXX
 3. She keeps the two Values private.
 4. Alice encodes each bit onto a string of qubits using the basis she chose, so each qubit is in one of the states |0⟩,|1⟩,|+⟩ or |-⟩, with the states chosen at random. The original qubit string looks like this:|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩,|0⟩ which is the message she sends to Bob.
-5. Bob measures each qubit at a random basis, for example at: XZZZXZXZXZXZZZXZ He keeps the result of the measurement private.
+5. Bob measures each qubit at a random basis (black square with an arrow pointing to C), for example at: XZZZXZXZXZXZZZXZ He keeps the result of the measurement private. ![Alt text](nointerception.png "Without Interception")
 6. Alice and Bob share the basis which they used for each qubit private. If Bob measured a qubit in the same basis as Alice prepared it in, the qubit becomes part of their shared secret key, if the qubit does not match its discarded.
 7. Alice and Bob share a random sample of their keys and if the sample matches, they know (to a small error margin) that their transmission is succesfull.
-```diff
-- mit Qiskit gegenchecken[1]
-```
+
 A potential evesdropper (Eve), changes the above scheme after step 4 as follows:
 1. Eve measures the Qubits at a random basis (just like Bob would) before they reach Bob.
 2. Eves measurement changed the basis of the Qubits which she now forwards to Bob.
-3. Now Bob shares its basis of measurement with Alice (similar to step 6 above.).
+3. Now Bob and Alice share their basis choices (similar to step 6 above):
 4. Since the keys dont match anymore, they know something failed during the transmision and they discard the Data.
 
-Since it is possible for Eve to guess the right basis Quantum Encryption is not 100 % safe. But the rate can be measuret and is as follows: 0.75^x,  x being the lenght of the key.
+Since it is possible for Eve to guess the right basis Quantum Encryption is not 100 % safe. But the rate can be measuret and is as follows: 0.75^x,  x being the lenght of bits used for the key.
 
 ### Encryption Example <a name="subparagraph4.3"></a>
 
@@ -129,4 +121,5 @@ Ent- and Decrpytion are both subject to certain limitations caused by the physic
 [6]The Jupyter Book Community, [Quantum Key Distribution](https://qiskit.org/textbook/ch-algorithms/quantum-key-distribution.html#1.-Introduction), 2021. [Online]\
 [7]The Jupyter Book Community, [Representing Qubit States](https://qiskit.org/textbook/ch-states/representing-qubit-states.html), 2021. [Online]\
 [8]The Jupyter Book Community, [Defining Quantum Circuits](https://qiskit.org/textbook/ch-algorithms/defining-quantum-circuits.html), 2021. [Online]\
-[9]van Loock, Peter. [Quantum communication research network launched](https://www.uni-mainz.de/presse/aktuell/14737_ENG_HTML.php), 2021. [Online]
+[9]The Jupyter Book Community, [Grovers Algorithm](https://qiskit.org/textbook/ch-algorithms/grover.html), 2021. [Online]\
+[10]van Loock, Peter. [Quantum communication research network launched](https://www.uni-mainz.de/presse/aktuell/14737_ENG_HTML.php), 2021. [Online]
